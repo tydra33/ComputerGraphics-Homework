@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 2</title>
+    <style type="text/css">
+      canvas {
+        border: 1px solid rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <script src="bezier.js" defer></script>
+  <body>
+    <canvas></canvas>
+    <p>Pick a mode:</p>
+    <p>
+      <input class="check" type="checkbox" id="draw" onclick="mode(this)" />
+      Draw
+      <input class="check" type="checkbox" id="select" onclick="mode(this)" />
+      Select
+      <input class="check" type="checkbox" id="move" onclick="mode(this)" />
+      Move
+    </p>
+    <p>
+      * Draw Mode Option:
+      <button type="button" id="newCurveBtn">New Curve</button>
+      (Breaks the continuity and creates a new Curve)
+    </p>
+    <p>
+      * "Select" mode operations (NOTE: if a curve is orange that means it is
+      selected):
+    </p>
+    <p>
+      Pick a color:
+      <input type="color" id="colorPicker" value="#000000" />
+      <button type="button" id="changeColorBtn">Change Color</button>
+      (Select a number of curves, pick the color and then press the "Change
+      Color" button)
+    </p>
+    <p>
+      Clear selected curves
+      <button type="button" id="clearCurvesBtn">Clear Curves</button>
+    </p>
+  </body>
+</html>
