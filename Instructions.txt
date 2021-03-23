@@ -1,0 +1,12 @@
+The application works by allowing the user to input vectors in the input box. Once the user has typed the input, they press the "Transform List of Vectors" button,
+which performs the following transformations to the inputted vectors:
+
+translation along the x-axis by 1.25
+rotation around the z-axis by an angle pi / 3
+translation along the z axis by 4.15
+translation along the y - axis by 3.14
+scalation along the x and y axes by 1.12
+rotation around the y-axis by an angle of 5 * pi / 8
+
+When the button is pressed the translated vectors will be written in the output field (under "Transformed points: ").
+
